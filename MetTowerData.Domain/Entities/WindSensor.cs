@@ -3,14 +3,14 @@
     public class WindSensor
     {
         public Guid Id { get; }
-        public int Height { get; }
+        public double Height { get; }
         public string Orientation { get; }
         public Guid MetTowerId { get; }
         public IEnumerable<WindData> Data { get; private set; }
 
         private WindSensor() { } // Empty Constructor for Entity Framework
 
-        public WindSensor(Guid metTowerId, int height, string orientation)
+        public WindSensor(Guid metTowerId, double height, string orientation)
         {
             Id = Guid.NewGuid();
             MetTowerId = metTowerId;
