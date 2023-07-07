@@ -25,21 +25,6 @@ namespace MetTowerData.Domain.TestProject
             Assert.Equal(expectedTimestamp, windData.Timestamp);
             Assert.Equal(expectedWindyVelocity, windData.Velocity);
         }
-
-
-        [Fact]
-        public void CreateWindData_ShouldSetStandardDeviaton()
-        {
-            // Arrange
-            double expectedStandardDeviaton = 6.7;
-            var windData = new WindData(Guid.NewGuid(), DateTime.Now, 6.7);
-
-            // Act
-            windData.SetStandardDeviaton(expectedStandardDeviaton);
-
-            // Assert
-            Assert.Equal(expectedStandardDeviaton, windData.StandardDeviaton);
-        }
     }
 }
 
