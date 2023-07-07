@@ -2,13 +2,18 @@
 
 ## Code Challenge
 ### Requirements
-1) Meteorological (met) towers are used to collect onsite data for resource assessment. Anemometers and wind vanes are installed on the tower at various heights and boom orientations. Ten-minute data is collected for each sensor including the minimum, maximum,  average, and standard deviation over the ten-minute interval. Provide a proposed C#  class/struct architecture design that would hold all metadata and data for wind speed and wind direction sensors on a met tower. 
-2) Using your class/struct design, write a function in C# that calculates and returns the average wind speed over a specified time period.  
-3) Using your class/struct design, write a function in C# that calculates and returns the average wind shear power law exponent.
+1. Meteorological (met) towers are used to collect onsite data for resource assessment. Anemometers and wind vanes are installed on the tower at various heights and boom orientations. Ten-minute data is collected for each sensor including the minimum, maximum,  average, and standard deviation over the ten-minute interval. Provide a proposed C#  class/struct architecture design that would hold all metadata and data for wind speed and wind direction sensors on a met tower. 
+1. Using your class/struct design, write a function in C# that calculates and returns the average wind speed over a specified time period.  
+1. Using your class/struct design, write a function in C# that calculates and returns the average wind shear power law exponent.
 ### Solution
 The solution is on MetTowerData.sln.
+I had some issues with the requirements as the calculations were not specified.
+* Standard Deviation - I researched how to do it and implemented it.
+* The same with "average wind shear power law exponent"
 
-Execute the tests 
+All metadata models are in the Domain project. Object functions could be tested on Domain.TestProject.
+
+Requirements 1, 2, and 3 were translated as UseCase classes in the Services project. To test, simply execute the tests from the classes in the Services.TestProject. 
 
 ## Data Base Challenge
 ### Requirements
