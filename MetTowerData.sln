@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetTowerData.Domain", "MetTowerData.Domain\MetTowerData.Domain.csproj", "{B6178661-B040-4DBD-9D0B-7D92BA9D0DD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19FF6E82-6605-4726-891F-737D85081809}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetTowerData.Domain.TestProject", "MetTowerData.Domain.TestProject\MetTowerData.Domain.TestProject.csproj", "{EC6BC93C-826D-4812-BFA8-F6360B9CEC5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetTowerData.Services", "MetTowerData.Services\MetTowerData.Services.csproj", "{3386F41B-C06F-4686-9DDF-25ED79C32A52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetTowerData.Services.TestProject", "MetTowerData.Services.TestProject\MetTowerData.Services.TestProject.csproj", "{B559770A-CF70-451A-B470-B4ACD0A23476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6178661-B040-4DBD-9D0B-7D92BA9D0DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6178661-B040-4DBD-9D0B-7D92BA9D0DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6178661-B040-4DBD-9D0B-7D92BA9D0DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6178661-B040-4DBD-9D0B-7D92BA9D0DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6BC93C-826D-4812-BFA8-F6360B9CEC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6BC93C-826D-4812-BFA8-F6360B9CEC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6BC93C-826D-4812-BFA8-F6360B9CEC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6BC93C-826D-4812-BFA8-F6360B9CEC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3386F41B-C06F-4686-9DDF-25ED79C32A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3386F41B-C06F-4686-9DDF-25ED79C32A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3386F41B-C06F-4686-9DDF-25ED79C32A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3386F41B-C06F-4686-9DDF-25ED79C32A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B559770A-CF70-451A-B470-B4ACD0A23476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B559770A-CF70-451A-B470-B4ACD0A23476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B559770A-CF70-451A-B470-B4ACD0A23476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B559770A-CF70-451A-B470-B4ACD0A23476}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ABE9912-5465-405D-83DD-C12BAC9EBB90}
+	EndGlobalSection
+EndGlobal
