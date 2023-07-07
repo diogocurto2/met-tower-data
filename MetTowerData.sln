@@ -21,6 +21,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MySqlModel", "MySqlModel", "{347221D2-ABC8-4015-A142-009C249FC289}"
 	ProjectSection(SolutionItems) = preProject
 		MySql\MetTower.mwb = MySql\MetTower.mwb
+		MySql Creates.txt = MySql Creates.txt
 	EndProjectSection
 EndProject
 Global

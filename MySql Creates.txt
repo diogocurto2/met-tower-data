@@ -1,0 +1,50 @@
+CREATE TABLE IF NOT EXISTS `mydb`.`Location` (
+  `Id` VARCHAR(36) NOT NULL,
+  `Name` VARCHAR(180) NULL,
+  `ShearCoeficiente` DOUBLE NULL,
+  PRIMARY KEY (`Id`))
+ENGINE = InnoDB
+
+CREATE TABLE IF NOT EXISTS `mydb`.`MetTower` (
+  `Id` VARCHAR(36) NOT NULL,
+  `Name` VARCHAR(180) NULL,
+  `Elevation` DOUBLE NULL,
+  `LocationId` VARCHAR(36) NOT NULL,
+  PRIMARY KEY (`Id`),
+  INDEX `fk_MetTower_Location_idx` (`LocationId` ASC) VISIBLE,
+  CONSTRAINT `fk_MetTower_Location`
+    FOREIGN KEY (`LocationId`)
+    REFERENCES `mydb`.`Location` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+
+CREATE TABLE IF NOT EXISTS `mydb`.`WindSensor` (
+  `Id` VARCHAR(36) NOT NULL,
+  `Height` DOUBLE NULL,
+  `Orientation` VARCHAR(45) NULL,
+  `MetTowerId` VARCHAR(36) NOT NULL,
+  PRIMARY KEY (`Id`),
+  INDEX `fk_WindSensor_MetTower1_idx` (`MetTowerId` ASC) VISIBLE,
+  CONSTRAINT `fk_WindSensor_MetTower1`
+    FOREIGN KEY (`MetTowerId`)
+    REFERENCES `mydb`.`MetTower` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+
+CREATE TABLE IF NOT EXISTS `mydb`.`WindData` (
+  `Id` VARCHAR(36) NOT NULL,
+  `Velocity` DOUBLE NULL,
+  `Timestamp` TIMESTAMP NULL,
+  `WindSensorId` VARCHAR(36) NOT NULL,
+  PRIMARY KEY (`Id`),
+  INDEX `fk_WindData_WindSensor1_idx` (`WindSensorId` ASC) VISIBLE,
+  CONSTRAINT `fk_WindData_WindSensor1`
+    FOREIGN KEY (`WindSensorId`)
+    REFERENCES `mydb`.`WindSensor` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
